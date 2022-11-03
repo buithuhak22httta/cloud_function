@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "cloud-function"
+version = "0.1.0"
+description = ""
+authors = ["Bui Thu Ha <thuhak22ba@gmail.com>"]
+readme = "README.md"
+packages = [{include = "cloud_function"}]
+
+[tool.poetry.dependencies]
+python = "~3.9"
+requests = "^2.28.1"
+pandas = "^1.5.1"
+google-cloud-bigquery = "^3.3.5"
+
+
+[tool.poetry.group.dev.dependencies]
+black = {version = "^22.10.0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
